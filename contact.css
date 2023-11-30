@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    background:gainsboro;
+
+}
+.sidenav{
+    width: 1600px;
+    height: 100px;
+    text-align:center;
+    
+}
+.sidenav ul{
+    display: inline-flex;
+    list-style: none;
+    color:black;
+}
+.sidenav ul li {
+    padding: 15px;
+    width: 120px;
+    margin:0;
+}
+.sidenav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.sidenav ul li:hover{
+    background:aquamarine;
+    border-radius: 3px;
+}
+
+
+#footer{
+    width: 100%;
+    padding: 50px 0 20px;
+    position: relative;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: 20px;
+    line-height: 10px;
+    font-size: 20px;
+    color: aquamarine;
+    font-weight: bold;
+    position:relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background:linear-gradient(#019587,#fff);
+    position: absolute;
+    top:-20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+
+}
+.footer-row p{
+    line-height: 35px;
+}
+.footer-left .fa-solid,.footer-right .fa-solid{
+    font-size: 20px;
+    color:#019587;
+    margin: 10px;
+
+}
+.footer-img{
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 43%;
+    top: 7%;
+    transform: translate(-40% -40%);
+}
+
+.social-links{
+    text-align: center;
+}
+.social-links .fa-brands{
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    border: 1px solid #019587;
+    margin: 40px 5px 0;
+    cursor: pointer;
+    color:#019587;
+    transition: .5s;
+}
+.social-links .fa-brands:hover{
+    background-color: #019587;
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+.social-links p{
+    font-size: 12px;
+    margin-top: 20px;
+}
